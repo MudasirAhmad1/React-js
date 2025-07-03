@@ -1,5 +1,5 @@
 import React from 'react'
-import { Login } from './Usercomponent'
+import { Login, Google } from './Usercomponent'
 
 function App() {
   // alert(sum()) //function call here which we make outside the app component
@@ -8,6 +8,7 @@ function App() {
       <h1>Hello World</h1>
       <Mudasir/>
       <Login/>
+     <Google/>
       <Mudasir2/> //coomponent call here which we make outside the app component
       <h1>{sum()}</h1> //function call here which we make outside the app component
     </>

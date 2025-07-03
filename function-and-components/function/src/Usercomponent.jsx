@@ -7,3 +7,11 @@ export function Login() {
     </div>
   )
 }
+
+export function Google() {
+    return(
+        <div>
+            <h1>Google</h1>
+        </div>
+    )
+}
