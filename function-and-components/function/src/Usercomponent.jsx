@@ -11,7 +11,7 @@ export function Login() {
 export function Google() {
     return(
         <div>
-            <h1>Google</h1>
+            <h1>Google Login</h1>
         </div>
     )
 }
