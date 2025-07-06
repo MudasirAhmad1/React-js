@@ -4,10 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ClickExamples from './Components/ClickExamples'
 import { Welcome } from './Components/ClickExamples'
+import Usest from './Components/Usest'
 
-function Apple() {
+
+ function Apple() {
   return (
     <div>
+      <Usest/>
       <ClickExamples/>
       <Welcome/>
     </div>

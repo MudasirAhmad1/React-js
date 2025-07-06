@@ -1,4 +1,7 @@
 import React from 'react'
+const fruits=(name)=>{
+    alert(`The Fruit is:  ${name}`);
+}
 
 function Login() {
     const name = "John";
@@ -17,9 +20,9 @@ function Login() {
     const mudi=()=>{
         alert("Welcome to Website");
     }
-    const fruits=(name)=>{
-        alert(`The Fruit name is:  ${name}`);
-    }
+    // const fruits=(name)=>{
+    //     alert(`The Fruit name is:  ${name}`);
+    // }
 
   return (
     <div>
