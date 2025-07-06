@@ -13,7 +13,13 @@ function Login() {
         age:20,
         city:"Delhi"
     }
-    const path="https://png.pngtree.com/background/20230517/original/pngtree-nature-wallpaper-a-path-in-beautiful-park-picture-image_2640870.jpg"
+    const path="https://png.pngtree.com/background/20230517/original/pngtree-nature-wallpaper-a-path-in-beautiful-park-picture-image_2640870.jpg";
+    const mudi=()=>{
+        alert("Welcome to Website");
+    }
+    const fruits=(name)=>{
+        alert(`The Fruit name is:  ${name}`);
+    }
 
   return (
     <div>
@@ -24,6 +30,10 @@ function Login() {
         <h2>{array[3]}</h2>
         <h2>{myobj.name}</h2>
         <img src={path}/>
+        <button onClick={mudi}>Click Me</button>
+        <button onClick={()=>{
+            fruits("Apple");
+        }}>Fruits</button>
     </div>
 
 
