@@ -1,23 +1,39 @@
 import React from 'react'
 
 function Login() {
+    const name = "John";
+    let x=45;
+    let y=23;
+    function add(a,b){
+        return a+b;
+    }
+    const array=[1,2,3,4,5,6,7,8,9,10];
+    const myobj={
+        name:"Mudassir",
+        age:20,
+        city:"Delhi"
+    }
+    const path="https://png.pngtree.com/background/20230517/original/pngtree-nature-wallpaper-a-path-in-beautiful-park-picture-image_2640870.jpg"
+
   return (
-    <>
-    <div>ClickExamples</div>
-    </>
+    <div>
+        <h1>Welcome to the website Login </h1>
+        <h2>{name}</h2>
+        <h2>{x+y}</h2>
+        <h2>{add(3,3)}</h2>
+        <h2>{array[3]}</h2>
+        <h2>{myobj.name}</h2>
+        <img src={path}/>
+    </div>
+
+
   )
 }
 
+export default Login
+
 export function Welcome(){
     return(
-        <h1>Welcome to the website</h1>
+        <h1>Welcome to the website Google </h1>
     )
 }
-
-export function Welcome2 (){
-    return(
-        <h2>Welcome to Google:</h2>
-    )
-}
-
-export default Login
