@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Home from './components/Home';
+import ClickExamples from './components/ClickExamples';
 
 function App() {
   let [counter,setcounter]=useState(1);
@@ -23,6 +24,7 @@ function App() {
       <br />
       <button onClick={sub}>click to Subtract: {counter} </button>
       <Home/>
+      <ClickExamples/>
     </>
   )
 }
