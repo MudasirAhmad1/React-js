@@ -14,9 +14,10 @@ function App() {
     <>
     {/* <Input/>
     <hr />
+    <Radio/>
     <Form/> */}
     {/* <Checkbox/> */}
-    <Radio/>
+    
     
     </>
   )
