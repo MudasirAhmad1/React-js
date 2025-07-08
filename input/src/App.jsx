@@ -6,6 +6,11 @@ import Input from './Input'
 import Form from './Form'
 import Checkbox from './Checkbox'
 import Radio from './Radio'
+import Data from './Data'
+import Data1 from './Data1'
+import Data3 from './Data3'
+import Clock from './Clock'
+import Clock2 from './Clock2'
 
 function App() {
   
@@ -16,9 +21,12 @@ function App() {
     <hr />
     <Radio/>
     <Form/> */}
-    {/* <Checkbox/> */}
-    
-    
+    {/* <Checkbox/>
+    <Data/>
+    <Data1/> */}
+    {/* <Data1/> */}
+    {/* <Clock/> */}
+    <Clock2/>
     </>
   )
 }
