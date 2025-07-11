@@ -16,6 +16,3 @@ function App() {
       <Card2/>
     </>
   )
-}
-
-export default App
