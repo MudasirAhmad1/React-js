@@ -25,7 +25,7 @@ function App() {
     input.current.style.display='inline'
   }
   const changecolor=()=>{
-    handles.current.style.color='red';
+    handles.current.style.color='red';                                                                                                                                  
     
   }
   
