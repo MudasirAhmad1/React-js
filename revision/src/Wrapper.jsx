@@ -1,10 +1,11 @@
 import React from 'react'
 
-function Wrapper() {
+function Wrapper({children}) {
   return (
-    <h1 style={{color:'green'}}>
-      <h1>Hello Mudasir </h1>
-    </h1>
+    <div style={{color:'green'}}>
+        {children}
+      
+    </div>
   )
 }
 

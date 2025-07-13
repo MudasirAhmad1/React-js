@@ -5,6 +5,8 @@ import Todo from './Todo';
 import Rev from './Rev';
 import Prop from './Prop';
 import Wrapper from './Wrapper';
+import New from './New';
+import Check from './Check';
 
 function App() {
   let name="Mudasir";
@@ -53,12 +55,11 @@ function App() {
       {/* <Prop myarray={myarray}/> */}
       {/* <Prop name={"Muzamil"}/> */}
       {/* <Prop/> */}
-
-      <Wrapper>
-        <h1>Welcome to New York:</h1>
-      </Wrapper>
-
-
+      {/* <Wrapper >
+        <h2>Welcome to Mudasir Aziz </h2>
+      </Wrapper> */}
+      {/* <New/> */}
+      <Check/>
       {
         aabid.map((item,index)=>(
           <ul key={index}>
