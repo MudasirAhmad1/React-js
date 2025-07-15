@@ -9,8 +9,25 @@ import New from './New';
 import Check from './Check';
 import Map from './Map';
 import Arr from './Arr';
+import Arr2 from './Arr2';
+import Clock from './Clock';
+import Clock2 from './Clock2';
+import Useeff from './Useeff';
+import Grop from './Grop';
+import Card from './Card';
+import Useref from './Useref';
+import Passfun from './Passfun';
+
+
+
+
 
 function App() {
+
+  
+
+
+
   let name="Mudasir";
   const handle=()=>{
     alert("Welcome to world");
@@ -65,7 +82,17 @@ function App() {
 
       {/* <Map/> */}
 
-      <Arr/>
+      {/* <Arr2/> */}
+      {/* <Clock2/> */}
+      {/* <Useeff/> */}
+
+      {/* <Grop/> */}
+      {/* <Card/> */}
+
+      {/* <Useref/> */}
+
+      <Passfun/>
+      
 
 
       {

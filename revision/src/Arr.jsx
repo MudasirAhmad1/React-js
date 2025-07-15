@@ -1,19 +1,11 @@
 import React from 'react'
 
-function Arr() {
-    const data=['mudasir','Aabid','Muzamil','Shugufta'];
+function Arr({data}) {
   return (
     <div>
-        {
-            data.map((item,index)=>(
-                <h3 key={index}>
-                    <li>{data}</li>
-                </h3>
-            ))
-        }
-
+        {data.email}
+        {data.name}
     </div>
   )
 }
-
 export default Arr

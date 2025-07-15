@@ -6,36 +6,71 @@ function Map() {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+           student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
             name:'Mudasir',
             Class:"Fith year",
             email:"Mudasirahmad@gmail.com",
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
         {
-            name:'Mudasir',
-            Class:"Fith year",
-            email:"Mudasirahmad@gmail.com",
+            name: 'Mudasir',
+            class: 'Fifth year',
+            email: 'Mudasirahmad@gmail.com',
+            student: [{
+            name: 'Muzamill',
+            class: '2nd'
+            }
+            ]
         },
     ]
   return (
@@ -44,9 +79,12 @@ function Map() {
             {
                 mudi.map((item,index)=>(
                     <ul key={index}>
-                        <li>{item.name}</li>
-                        <li>{item.Class}</li>
-                        <li>{item.email}</li>
+                        {item.student.map((student,index2)=>(
+                            <h2 key={index2}>
+                                {student.name}
+                            </h2>
+                        
+                        ))}
                     </ul>
                 ))
             }
