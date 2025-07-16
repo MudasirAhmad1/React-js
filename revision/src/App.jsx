@@ -17,16 +17,12 @@ import Grop from './Grop';
 import Card from './Card';
 import Useref from './Useref';
 import Passfun from './Passfun';
-
-
-
-
-
 function App() {
 
-  
-
-
+  const display=()=>{
+    alert(name);
+  }
+  // const name2="Mudasir";
 
   let name="Mudasir";
   const handle=()=>{
@@ -91,7 +87,7 @@ function App() {
 
       {/* <Useref/> */}
 
-      <Passfun/>
+      <Passfun display={display} name={"sam"}/>
       
 
 

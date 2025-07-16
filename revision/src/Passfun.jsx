@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Passfun() {
+function Passfun({display,name}) {
   return (
-    <div>Passfun</div>
+    <div>
+        <button onClick={()=>{
+            display(name)
+        }}>CLick to call</button>
+    </div>
   )
 }
 
