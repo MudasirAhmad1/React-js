@@ -12,9 +12,7 @@ function Input() {
 
     const handle=()=>{
         setnum({...num,name:data});
-
     }
-
   return (
     <>
     <h1>Input the data</h1>
