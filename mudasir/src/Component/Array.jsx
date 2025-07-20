@@ -1,29 +1,20 @@
-import React, { useState } from 'react';
+// 'use client'; // for Next.js
 
-function Array() {
-  const [data, setData] = useState(['Mudasir', 'Muzamil', 'Aabid']);
-  const [num, setNum] = useState('');
+import { useActionState } from 'react';
 
-  const handle = () => {
-    if (num.trim() !== '') {
-      setData([...data, num]);
-      setNum(''); // Clear input after adding
-    }
-  };
-
-  return (
-    <div>
-      <h1>Welcome: {data.join(', ')}</h1>
-
-      <input
-        type="text"
-        placeholder="Enter name:"
-        value={num}
-        onChange={(e) => setNum(e.target.value)}
-      />
-      <button onClick={handle}>Click</button>
-    </div>
-  );
+async function submitAction(prevState, formData) {
+  const name = formData.get('name');
+  return { message: `Hello, ${name}!` };
 }
 
-export default Array;
+export default function NameForm() {
+  const [state, formAction] = useActionState(submitAction, { message: '' });
+
+  return (
+    <form action={formAction}>
+      <input type="text" name="name" placeholder="Your name" required />
+      <button type="submit">Say Hello</button>
+      {state.message && <p>{state.message}</p>}
+    </form>
+  );
+}
