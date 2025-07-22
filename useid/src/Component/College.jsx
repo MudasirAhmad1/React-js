@@ -6,8 +6,7 @@ function College() {
     const [data,setdata]=useState();
   return (
     <div style={{ backgroundColor:'green',padding:'10px'}}>
-        <h1>College Componenet</h1>
-        
+        <h1>College Componenet</h1> 
        <usercontext.Provider value={data}>
         <Classs />
       </usercontext.Provider>
