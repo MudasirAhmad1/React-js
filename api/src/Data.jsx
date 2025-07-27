@@ -11,7 +11,7 @@ function Data() {
         let response= await fetch(url)
         response= await response.json();
         setdata(response);
-        console.log(response[1].name);
+        
         }
 
   return (
