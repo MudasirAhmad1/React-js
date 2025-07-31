@@ -10,6 +10,7 @@ import Useredit from './Useredit';
 import Mudi from './Mudi';
 import Mudi2 from './Mudi2';
 import UseAction from './UseAction';
+import Project from './Project';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Link to={"/data"}>Data</Link>
       <Link to={"/mudi"}>Mudi</Link>
       <Link to={"/useaction"}>UseAction</Link>
+      <Link to={"/project"}>Project</Link>
       </nav>
        <Routes>
         <Route path="/" element={<Home/>} />
@@ -35,6 +37,7 @@ function App() {
         <Route path='/mudi/:id' element={<Mudi2/>} />
         <Route path='/data/Useredit/:id' element={<Useredit/>}/>
         <Route path='/useaction' element={<UseAction/>}/>
+        <Route path='/project' element={<Project/>}/>
       </Routes>
      
     </div>
