@@ -1,15 +1,10 @@
 import React from 'react'
-import Home from './Component/Home'
+import About from './About'
 
 function App() {
-  const user={
-    back:"green" ,
-    col:"white", 
-  }
-  
   return (
     <div>
-      <Home/>
+      <About/>
     </div>
   )
 }

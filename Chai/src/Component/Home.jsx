@@ -1,32 +1,28 @@
 import React, { useState } from 'react'
 
 function Home() {
-    const [name,setname]=useState();
-    const [password,setpassword]=useState()
-    const [email,setemail]=useState()
+  let [count,setcount]=useState([]);
+  const handle=(e)=>{
+    if()
+    console.log(e.target.checked);
+    
+  }
   return (
     <>
-    <h1>Controled componenet</h1>
-    <form action="" method="get">
-        <input type="text" placeholder='Enter the Name: ' id='text' onChange={(e)=>{setname(e.target.value)}} value={name} />
-        <br />
-        <br />
-        <input type="email" name="" id="email" placeholder='Enter the Email:' onChange={(e)=>{setemail(e.target.value)}} value={email} />
-        <br />
-        <br />
-        <input type="password" name="" id="password" placeholder='Enter the Password' onChange={(e)=>{setpassword(e.target.value)}} value={password} />
-        <br />
-        <br />
-        <button onClick={()=>{
-            setemail('')
-            setname('')
-            setpassword('')
-        }}>Submit</button>
+    <h1 style={{textAlign:'center'}}>
+    <br />
+    <input type="checkbox" name="php" id="php" value={"php"} onChange={handle} />
+    <label htmlFor="php">php</label>
+    <br />
+    <input type="checkbox" name="javascript" id="javascript" value={"javscript"} onChange={handle} />
+    <label htmlFor="javascript">javascript</label>
+    <br />
+    <input type="checkbox" name="java" id="java" value={"java"} onChange={handle} />
+    <label htmlFor="java">java</label>
 
-        <br />
-        <h1>{name},{email},{password}</h1>
-
-    </form>
+    <br />
+    <p>{count}</p>
+    </h1>
     </>
   )
 }
