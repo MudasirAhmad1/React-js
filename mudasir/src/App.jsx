@@ -9,6 +9,10 @@ import About from './Component/About'
 import Contact from './Component/Contact'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Project from './Component/Project'
+import Navbar from './Component/Navbar'
+import Form from './Form'
+import Useradd from './Useradd'
+import Delete from './Delete'
 
 function App() {
   return (
@@ -19,18 +23,18 @@ function App() {
     {/* <CounterApp/> */}
     {/* <InputExample/> */}
     <BrowserRouter>
-      <nav style={{ padding: '10px', background: '#eee' }}>
-        <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-        <Link to="/about" style={{ marginRight: '10px' }}>About</Link>
-        <Link to="/contact" style={{ marginRight: '10px' }}>Contact</Link>
-        <Link to="/project" >Project</Link>
-      </nav>
+      <Navbar/>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/delete' element={<Delete/>}/>
         <Route path="/project" element={<Project/>} />
+        <Route path="/adduser" element={<Useradd/>}/>
+        <Route path="/form" element={<Form/>}/>
+        
+
         
       </Routes>
     </BrowserRouter>
