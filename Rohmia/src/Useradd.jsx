@@ -19,6 +19,8 @@ function Useradd() {
         response=await response.json();
         setdata(response);
         //console.log(name,age,email);
+        console.log("Welcome");
+        
         
     }
   return (
