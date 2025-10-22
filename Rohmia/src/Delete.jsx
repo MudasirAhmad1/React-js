@@ -5,6 +5,7 @@ function Delete() {
   return (
     <div>
         <button>Delete</button>
+        <button>Mudasir</button>
     </div>
   )
 }
